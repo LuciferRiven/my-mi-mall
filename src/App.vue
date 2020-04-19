@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <router-view/>
   </div>
 </template>
 
@@ -9,9 +9,18 @@
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    
+  },
+
+  data() {
+    return {
+
+    }
+  },
+  mounrend(){
+    
   }
-}
+  }
 </script>
 
 <style>
