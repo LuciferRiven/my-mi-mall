@@ -4,6 +4,11 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App.vue'
 
+const mock = true;
+if(mock){
+  require('./mock/api')
+}
+
 //根据前端跨域方式做调整
 axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;

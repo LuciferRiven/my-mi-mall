@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import storage from './storage/index'
+// import storage from './storage/index'
+
 
 export default {
   name: 'App',
@@ -15,11 +16,13 @@ export default {
 
   data() {
     return {
-
+      res:{}
     }
   },
   mounted(){
-    storage.setItem('a',1)
+    this.axios.get('/user/login').then((res)=>{
+      this.res = res;
+    })
   }
   }
 </script>
