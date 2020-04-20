@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import storage from './storage/index'
 
 export default {
   name: 'App',
@@ -17,8 +18,8 @@ export default {
 
     }
   },
-  mounrend(){
-    
+  mounted(){
+    storage.setItem('a',1)
   }
   }
 </script>
